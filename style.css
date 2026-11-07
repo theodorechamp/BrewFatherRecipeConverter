@@ -1,0 +1,140 @@
+body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #000;
+      margin: 40px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 5px;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .flex-container {
+      display: flex; /* Activates Flexbox */
+      align-items: flex-start;
+      justify-content: space-between; /* Spaces items evenly */
+    }
+
+    .item {
+      flex: 1; /* Allows items to grow and split space evenly */
+    }
+    
+
+    .header-table, .data-table, .mash-table, .boil-table, .yeast-table, .fermentables-table {
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .note-table td {
+        padding: 4px 8px;
+        transform: translateX(4px);
+    }
+
+    .header-table td, .header-table th{
+      padding: 4px 8px;
+      border: 1px solid #000;
+      text-align: left;
+      min-width: 100px;
+    }
+
+    .header-table th, .mash-table th, .boil-table th, .fermentables-table th{
+        background-color: lightgrey;
+
+    }
+
+    .notes-p p {
+        min-width: 1000px;
+    }
+
+    .fermentables-table td, .fermentables-table th {
+        padding: 4px 12px;
+        border: 1px solid #000;
+        
+    }
+
+    .mash-table td, .mash-table th {
+        padding: 4px 12px;
+        border: 1px solid #000;
+        
+    }
+
+     .boil-table td, .boil-table th {
+        padding: 4px 12px;
+        border: 1px solid #000;
+        
+    }
+
+    .yeast-table td{
+        padding: 4px 12px;
+        border: 1px solid #000;
+        max-width: 400px;
+    }
+
+    .yeast-table td:first-child {
+        background-color: lightgrey;
+        font-weight: bold;
+    }
+
+    .yeast-table-title td {
+        background-color: lightgrey;
+    }
+
+
+    .data-table th, .data-table td {
+      border: 1px solid #000;
+      padding: 6px;
+      text-align: left;
+    }
+
+    .data-table th {
+      background-color: #eee;
+    }
+
+    .signature-box {
+      border: 1px solid #000;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .signature-line {
+      margin-top: 20px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      left: 40px;
+      right: 40px;
+      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+
+    .table-container {
+      display: flex;
+      flex-wrap:wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    @page {
+    size: A4;
+    margin: 20mm;
+
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Arial, sans-serif;
+        font-size: 10pt;
+        color: #555;
+    }
+  }
+
+

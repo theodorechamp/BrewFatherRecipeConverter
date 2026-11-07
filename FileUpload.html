@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brewing Recipe</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+
+</head>
+<body>
+
+    <div class="csv-import-container">
+                <label for="importJSONFile" class="csv-label"><b>Import File</b></label>
+                <input type="file" id="importJSONFile" accept=".json">
+                
+    </div>
+    <div id="status"></div>
+
+
+    <div id="recipe"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="ProcessJSON.js" defer></script>
+
+
+</body>
+</html>
